@@ -1,0 +1,101 @@
+.portfolio {
+  &__wrapper {
+    padding: 180px 0 160px;
+  }
+  &__header {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: normal;
+    font-size: 30px;
+  }
+  &__filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+  &__link {
+    display: inline-block;
+    color: #000;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 2px 17px 5px 15px;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    font-family: Oswald;
+    &:not(:last-of-type) {
+      border-right: 1px solid #000;
+    }
+    &:hover {
+      color: @green;
+    }
+  }
+  &__more {
+    text-transform: uppercase;
+    font-family: Oswald;
+    font-size: 18px;
+    background: none;
+    border: none;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+  }
+  &__container {
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    margin-bottom: 80px;
+  }
+  &__item {
+    height: 250px;   
+    &--big {
+      height: 500px;
+    }
+    &:nth-of-type(1) {
+      background: #f54759;
+    }
+     &:nth-of-type(2) {
+      background: #e0d7cd;
+    }
+     &:nth-of-type(3) {
+      background: #e3d3c8;
+    }
+     &:nth-of-type(4) {
+      background: #dbdbd3;
+    }
+     &:nth-of-type(5) {
+      background: #e6e6e6;
+    }
+     &:nth-of-type(6) {
+      background: #513c4b;
+    }
+     &:nth-of-type(7) {
+      background: #e6e6e6;
+    }
+     &:nth-of-type(8) {
+      background: #f2eed4;
+    }
+     &:nth-of-type(9) {
+      background: @yellow;
+    }
+  }
+  @media @tablet {
+    &__container {
+      height: 1500px;
+    }
+    &__item {
+      width: 50%;
+    }
+  }
+  @media @desktop {
+    &__container {
+      height: 1000px;
+    }
+    &__item {
+      width: 33.33%;
+    }
+  }
+}

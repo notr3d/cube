@@ -1,22 +1,49 @@
-@mobile: ~ "(max-width: 649)";
-@tablet: ~ "(min-width: 650)";
-@desktop: ~ "(min-width: 1300)";
+@mobile: ~ "(max-width: 649px)";
+@tablet: ~ "(min-width: 650px)";
+@desktop: ~ "(min-width: 1300px)";
 
-/*@blue:#29c5e6;*/
+@yellow:#f0d93e;
+@green:#60d4d4;
 
-/*@import "header.less";*/
+@import "header.less";
+@import "about.less";
+@import "people.less";
+@import "process.less";
+@import "portfolio.less";
 
-/*@font-face {
+@font-face {
+  font-family: Lekton;
+  src: url("../font/lekton/Lekton-Regular.ttf");
+}
+
+@font-face {
   font-family: Oswald;
-  src: url("font/Oswald/Oswald-Light.ttf");
-}*/
+  src: url("../font/oswald/Oswald-Regular.ttf");
+}
 
-body {
+* {
   margin: 0;
 }
 
+body {
+  margin: 0;
+  font-family: Lekton, sans-serif;
+}
+
 .lcw() {
-  max-width:1080px;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+.lcw-t() {
+  max-width:650px;
+  margin: 0 auto;
+}
+.lcw-d() {
+  max-width:1300px;
   margin: 0 auto;
 }
 
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Oswald;
+}

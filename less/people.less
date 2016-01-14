@@ -1,0 +1,62 @@
+.people {
+  &__wrapper {
+    display: flex;
+    flex-wrap:wrap;
+  }
+  &__item {
+    flex-basis: 100%;
+    height: 500px;
+    padding: 280px 35px 0;
+    box-sizing: border-box;
+    background: @green no-repeat center;
+    h2 {
+      color: @green;
+      margin-bottom: 15px;
+      font-size: 30px;
+      text-transform: uppercase;
+      font-weight: normal;
+    }
+    h3 {
+      margin-bottom: 15px;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: normal;
+    }
+    p {
+      font-size: 14px;
+      margin-bottom: 15px;
+      line-height: 14px;
+    }
+    &:nth-of-type(2n) {
+      text-align: right;
+      .social {
+        float: right;
+      }
+    }
+    &:nth-of-type(1) {
+      background-image: url(../img/people/doe.png);
+    }
+    &:nth-of-type(2) {
+      background-image: url(../img/people/dowson.png);
+    }
+    &:nth-of-type(3) {
+      background-image: url(../img/people/bross.png);
+    }
+    &:nth-of-type(4) {
+      background-image: url(../img/people/croft.png);
+    }
+  }
+  .social {
+    background: rgba(0, 0, 0, 0.4);
+  }
+  @media @tablet {
+    &__item {
+      flex-basis: 50%;
+    }
+  }
+  @media @desktop {
+    &__item {
+      flex-basis: 25%;
+    }
+  }
+}
