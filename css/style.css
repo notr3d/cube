@@ -703,7 +703,7 @@
   }
 }
 .blog {
-  padding: 180px 0 210px;
+  padding: 180px 0 170px;
 }
 .blog__wrapper {
   padding: 0 50px;
@@ -741,6 +741,7 @@
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%;
   padding: 0 15px;
+  margin-bottom: 40px;
 }
 .blog__item img {
   height: 200px;
