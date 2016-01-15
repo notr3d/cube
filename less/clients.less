@@ -1,0 +1,31 @@
+.clients {
+  background: #f2f2f2;
+  @media @mobile {
+    display: none;
+  }
+  &__wrapper {
+    padding: 100px 0;
+    .lcw;
+    overflow: hidden;
+  }
+  &__item {
+    width: 200px;
+    height: 150px;
+    background: grey;
+    padding: 50px;
+    background: url(../img/clients/1.png) no-repeat center;
+    &:nth-of-type(2n) {
+      background-image: url(../img/clients/2.png);
+    }
+    &:nth-of-type(3n) {
+      background-image: url(../img/clients/3.png);
+    }
+    &:nth-of-type(4n) {
+      background-image: url(../img/clients/4.png);
+    }
+    &:nth-of-type(5n) {
+      background-image: url(../img/clients/5.png);
+    }
+    
+  }
+}
